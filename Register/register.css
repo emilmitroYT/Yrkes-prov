@@ -1,0 +1,13 @@
+body {
+    background-color: lightblue;
+  }
+.text{
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+}
+.register{
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+}
