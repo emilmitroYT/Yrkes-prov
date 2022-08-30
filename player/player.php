@@ -10,10 +10,9 @@
 <?php 
 	$user = $_POST["Username"];
 	$name = $_POST["Name"];
-	$Epost = $_POST["E-post"];
-	$Phone = $_POST["Phone"];
-	$Password = $_POST["Password"];
-	echo $user. " ". $name. " ". $Epost. " ".$Phone. " ". $Password ;
+	$epost = $_POST["E-post"];
+	$phone = $_POST["Phone"];
+	$password = $_POST["Password"];
 ?>
 </body>
 </html>

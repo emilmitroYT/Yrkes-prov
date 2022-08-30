@@ -8,7 +8,39 @@
 </head>
 <body>
 	<?php
+		session_start();
+		
 		include("../connection.php");
+		include("../functions.php");
+		
+		
+		
+		
+		
+		
+		
+		if($_SERVER['REQUEST_METHOD'] == "POST")
+		{
+			$user = $_POST["Username"];
+			$name = $_POST["Name"];
+			$epost = $_POST["E-post"];
+			$phone = $_POST["Phone"];
+			$password = $_POST["Password"];
+			if(!empty($username) || !empty($password) || !is_numeric($username)){
+				//save
+				$id = random_num(20);
+				$query = "INSERT INTO users VALUES ('$id',$namet','$username','$password','$phone','$email')";
+				$result = mysql_query($query);
+				mysqli_query($con, $query);
+				header("Location: ../Login/login.php");
+			}
+			else
+			{
+				echo ("not valid info");
+			}
+		
+		
+		}
 	?>
 	<div class="text">
 		<h1>Register</h1>
