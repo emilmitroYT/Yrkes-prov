@@ -8,11 +8,29 @@
 <body>
 
 <?php 
-	$user = $_POST["Username"];
-	$name = $_POST["Name"];
-	$epost = $_POST["E-post"];
-	$phone = $_POST["Phone"];
-	$password = $_POST["Password"];
+	include_once '../functions.php';
+	include_once '../connection.php';
+	$name = $_POST["name"];
+	$user = $_POST["username"];
+	$password = $_POST["password"];
+	$phone = $_POST["phone"];
+	$epost = $_POST["e-post"];
+	$sql = "INSERT INTO users (name,username,password,phone,email) VALUES ('$name','$user','$password','$phone','$epost')";
+
+	
+
+
+
+
+if (mysqli_query($con,$sql)) {
+	echo "New record created";
+}
+else {
+	echo "error" . $sql . " " . mysqli_error($con);
+}
+mysqli_close($con);
+
+
 ?>
 </body>
 </html>

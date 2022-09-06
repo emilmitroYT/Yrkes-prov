@@ -9,16 +9,39 @@
 <body>
 	<?php
 		session_start();
-		
 		include("../connection.php");
 		include("../functions.php");
+		/*
+		$name = $_POST["name"];
+		$user = $_POST["username"];
+		$password = $_POST["password"];
+		$phone = $_POST["phone"];
+		$epost = $_POST["e-post"];
+		if (isset($name)) {
+			echo "Fill in all.<br>";
+		if (isset($user)) {
+			echo "Fill in all.<br>";
+		
+		if (isset($password)) {
+			echo "Fill in all.<br>";
+		
+		if (isset($phone)) {
+			echo "Fill in all.<br>";
+		
+		if (isset($epost)) {
+			echo "Fill in all.<br>";
+			header("Location: ../player/player.php");
+		}
+		}
+		}
+		}
+		}
+		*/
 		
 		
 		
 		
-		
-		
-		
+		/*
 		if($_SERVER['REQUEST_METHOD'] == "POST")
 		{
 			$user = $_POST["Username"];
@@ -29,7 +52,7 @@
 			if(!empty($username) || !empty($password) || !is_numeric($username)){
 				//save
 				$id = random_num(20);
-				$query = "INSERT INTO users VALUES ('$id',$namet','$username','$password','$phone','$email')";
+				$query = "INSERT INTO users VALUES ('$id',$name','$username','$password','$phone','$email')";
 				$result = mysql_query($query);
 				mysqli_query($con, $query);
 				header("Location: ../Login/login.php");
@@ -41,6 +64,7 @@
 		
 		
 		}
+		*/
 	?>
 	<div class="text">
 		<h1>Register</h1>
@@ -51,13 +75,23 @@
 
 	<div class="register">
 		<form action="../player/player.php" method="post">
-			<input method="post" type="text" name="Name" placeholder="Name" id="Name"> <BR> <BR>
-			<input method="post" type="email" name="E-post" placeholder="E-post" id="E-post"> <BR> <BR>
-			<input method="post" type="tel" name="Phone" placeholder="Phone" id="Phone"> <BR> <BR>
-			<input method="post" type="text" name="Username" placeholder="Username" id="Username"> <BR> <BR>
-			<input method="post" type="text" name="Password" placeholder="Password" id="Password"> <BR> <BR>
+			<input type="text" name="name" placeholder="Name" > <BR> <BR>
+			<input  type="email" name="e-post" placeholder="E-post" > <BR> <BR>
+			<input  type="tel" name="phone" placeholder="Phone" > <BR> <BR>
+			<input  type="text" name="username" placeholder="Username" > <BR> <BR>
+			<input  type="text" name="password" placeholder="Password" > <BR> <BR>
+			<input  type="text" name="password" placeholder="Password" > <BR> <BR>
 			<input type="submit" value="Register" />
+		
+		
+		
+		
+		
+		
 		</form>
 	</div>
+	
+
+
 </body>
 </html>

@@ -7,14 +7,26 @@
 	<link rel="stylesheet" href="login.css">
 </head>
 <body>
+
+<?php
+	include("../connection.php");
+	include("../functions.php");
+	include("../loginhandler.php");
+
+	
+	if(isset($_POST['Login'])){
+		loginhandler();
+	}
+	
+?>
 	<div class="text">
 		<h1>Register</h1>
 	</div>
 	<div class="login">
-		<form action="../player/player.php" method="post">
-			<input method="post" type="text" name="Username" placeholder="Username" id="Username"> <BR> <BR>
-			<input method="post" type="text" name="Password" placeholder="Password" id="Password"> <BR> <BR>
-			<input type="submit" value="Login" />
+		<form method="post">
+			<input type="text" name="username" placeholder="Username"> <BR> <BR>
+			<input type="text" name="password" placeholder="Password"> <BR> <BR>
+			<input type="submit" name="Login" value="Login" />
 		</form>
 	</div>
 	

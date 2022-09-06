@@ -1,10 +1,10 @@
 <?php
-    $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "";
-    $dbname = "yrkesprov";
+   $dbhost = "localhost:3307";
+   $dbuser = "root";
+   $dbpass = "";
+   $dbname = "yrkesprov";
 
-    if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname)){
-        die("failed to connect!");
-    }
+   if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname)){
+       die("failed to connect!");
+   }
 ?>
