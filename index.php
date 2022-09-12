@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>JOOOO Play</title>
 	<script src="script.js"></script>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 <?php

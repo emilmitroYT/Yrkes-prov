@@ -1,8 +1,9 @@
 <?php
+/*
 include("login/login.php");
 function loginhandler(){
 if(!empty($username) || !empty($password) || !is_numeric($username)){
-    //loggin
+    //loggin system
     $password = md5($password);
     $query = "SELECT * FROM users WHERE username = '$username' LIMIT 1";
     $result = mysqli_query($con, $query);
@@ -23,7 +24,7 @@ else
     echo ("not valid info");
 }
 }
-
+*/
 
 
 ?>

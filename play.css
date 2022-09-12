@@ -1,0 +1,9 @@
+body {
+    background-color: lightblue;
+}
+
+.header{
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+}
