@@ -1,7 +1,9 @@
 <?php
+include("login/login.php");
 function loginhandler(){
 if(!empty($username) || !empty($password) || !is_numeric($username)){
     //loggin
+    $password = md5($password);
     $query = "SELECT * FROM users WHERE username = '$username' LIMIT 1";
     $result = mysqli_query($con, $query);
     if ($result) {
@@ -9,7 +11,7 @@ if(!empty($username) || !empty($password) || !is_numeric($username)){
             $user_data = mysqli_fetch_assoc($result);
             if ($user_data['password'] === $password) {
                 $_SESSION['id'] = $user_data['id'];
-                header("Location: ../player/player.php");
+                header("Location: ../main.php");
                 die;
             }
         }

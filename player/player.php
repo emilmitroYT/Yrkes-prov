@@ -15,8 +15,9 @@
 	$password = $_POST["password"];
 	$phone = $_POST["phone"];
 	$epost = $_POST["e-post"];
+	$password = md5($password);
 	$sql = "INSERT INTO users (name,username,password,phone,email) VALUES ('$name','$user','$password','$phone','$epost')";
-
+	
 	
 
 
@@ -24,6 +25,8 @@
 
 if (mysqli_query($con,$sql)) {
 	echo "New record created";
+	sleep(5);
+	header("Location: ../main.php");
 }
 else {
 	echo "error" . $sql . " " . mysqli_error($con);
