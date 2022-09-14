@@ -1,6 +1,7 @@
 body {
-    background-color: lightblue;
-  }
+	background-image: url("jade.jpg");
+	background-color: #cccccc;
+}
 .text{
     width: 100px;
     padding: 10px;

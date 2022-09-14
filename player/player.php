@@ -15,21 +15,25 @@
 	$password = $_POST["password"];
 	$phone = $_POST["phone"];
 	$epost = $_POST["e-post"];
+	$rpassword = $_POST["rpassword"]
 	$password = md5($password);
 	$sql = "INSERT INTO users (name,username,password,phone,email) VALUES ('$name','$user','$password','$phone','$epost')";
+
+
+
+if ($password !== $rpassword){
 	
-	
-
-
-
-
-if (mysqli_query($con,$sql)) {
-	echo "New record created";
-	sleep(5);
-	header("Location: ../main.php");
+	if (mysqli_query($con,$sql)) {
+		echo "New record created";
+		sleep(5);
+		header("Location: ../main.php");
+	}
+	else {
+	echo "error" . $sql . " " . mysqli_error($con);
+}
 }
 else {
-	echo "error" . $sql . " " . mysqli_error($con);
+	header("Location: ../index.php")
 }
 mysqli_close($con);
 

@@ -27,14 +27,14 @@
 			<input  type="tel" name="phone" placeholder="Phone" > <BR> <BR>
 			<input  type="text" name="username" placeholder="Username" > <BR> <BR>
 			<input  type="password" name="password" placeholder="Password" > <BR> <BR>
-			<input  type="password" name="password" placeholder="Password" > <BR> <BR>
+			<input  type="password" name="rpassword" placeholder="Repeat Password" > <BR> <BR>
 			<input type="submit" value="Register" />
-		
-		
-		
-		
-		
-		
+		</form>
+	</div>
+	<div class="accont">
+	<form action="../login/login.php">
+			<h5>Have a accont?</h5> <input type="submit" value="Login">
+			
 		</form>
 	</div>
 	

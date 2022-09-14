@@ -1,24 +1,3 @@
-body {
-  background-color: lightblue;
-}
-.header{
-  width: 100px;
-  padding: 10px;
-  margin: auto;
-}
-.logo{
-  display: block;
-  margin-left: 685px;
-  margin-right: auto;
-  width: auto;
-}
-.login{
-  width: 75px;
-  padding: 10px;
-  margin: auto;
-}
-.register{
-  width: 82px;
-  padding: 10px;
-  margin: auto;
+.d{
+  text-align: center;
 }

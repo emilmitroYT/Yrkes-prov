@@ -1,12 +1,18 @@
 body {
-    background-color: lightblue;
-  }
+	background-image: url("jade.jpg");
+	background-color: #cccccc;
+}
 .text{
     width: 100px;
     padding: 10px;
     margin: auto;
 }
 .register{
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+}
+.accont{
     width: 100px;
     padding: 10px;
     margin: auto;

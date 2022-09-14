@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>login</title>
-	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="../login/login.css">
 </head>
 <body>
 
@@ -13,8 +13,11 @@
 	//include("../functions.php");
 	//include("../loginhandler.php");
 
+
 	
 	if(isset($_POST['Login'])){
+		$username = $_POST["username"];
+		$password = $_POST["password"];
 		if(!empty($username) || !empty($password) || !is_numeric($username)){
 			//loggin system
 			$password = md5($password);
