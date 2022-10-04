@@ -29,8 +29,8 @@
         <div class="clear-fix my-5"></div>
         <div  class="container w-100">
             <div class="col-12">
-                <div class="row">
-                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="sidenav">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card rounded-0 shadow">
                         <div class="card-header py-1">
                             <div class="d-flex w-100">
@@ -65,8 +65,11 @@
                             </ul>
                         </div>
                     </div>
-                 </div>
-                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                </div>
+                </div>
+                 <div class="row">
+                
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="col-md-12 text-center">
                             <img src="./images/music-logo.jpg" alt="" id="display-img" class="img-fluid border bg-gradient bg-dark">
                         </div>
@@ -103,11 +106,11 @@
                                 </div>
                             </div>
                         </div>
-                 </div>
+                    </div>
                 </div>
             </div>
         </div>
-
+                   
         <div class="modal text-dark" id="music_modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-md">
                 <div class="modal-content rounded-0">
@@ -150,6 +153,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="modal text-dark" id="update_music_modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-md">
                 <div class="modal-content rounded-0">
